@@ -1,9 +1,5 @@
-# proyecto_mvo
-Proyecto Infraestructura Virtual
-Grado Ingeniería Informática
-Curso 22-23
-
-# Autor
+# Proyecto Infraestructura Virtual
+Grado Ingeniería Informática - Curso 22-23
 María Vallejo Ortega
 
 # Problema a resolver
