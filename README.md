@@ -1,5 +1,6 @@
 # Proyecto Infraestructura Virtual
 Grado Ingeniería Informática - Curso 22-23
+
 María Vallejo Ortega
 
 # Problema a resolver
@@ -18,6 +19,7 @@ Como solución a este problema, propongo una aplicación que permita, a través 
 una serie de preguntas especificas extraer la información necesaria, analizarla
 y calcular la rutina facial y productos que mejor se adecuan a la persona. Es decir,
 será un <b>recomendador de rutinas faciales</b>.
+
 Además de esto, podría aparecer una sección con los productos más utilizados o
 recomendados por la aplicación con estadísticas sobre el
 tipo de piel en las que se suelen utilizar.
