@@ -21,6 +21,7 @@ uso de maquillaje o el tiempo del que se dispone para cuidar la piel.
 Como solución a este problema, propongo una aplicación que permita, a través de
 una serie de preguntas especificas extraer la información necesaria, analizarla
 y calcular la rutina facial y productos que mejor se adecuan a la persona. Es decir,
-será un <b>recomendador de rutinas faciales</b>
+será un <b>recomendador de rutinas faciales</b>.
 Además de esto, podría aparecer una sección con los productos más utilizados o
-recomendados por la aplicación.
+recomendados por la aplicación con estadísticas sobre el
+tipo de piel en las que se suelen utilizar.
