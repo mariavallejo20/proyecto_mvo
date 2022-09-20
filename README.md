@@ -20,6 +20,9 @@ una serie de preguntas especificas extraer la información necesaria, analizarla
 y calcular la rutina facial y productos que mejor se adecuan a la persona. Es decir,
 será un <b>recomendador de rutinas faciales</b>.
 
-Además de esto, podría aparecer una sección con los productos más utilizados o
-recomendados por la aplicación con estadísticas sobre el
-tipo de piel en las que se suelen utilizar.
+# Lógica de negocio
+La lógica de negocio es la de un cliente que genera su propia rutina facial
+personalizada a sus necesidades, pagando un precio por el servicio. Es una Lógica
+similar a la de aplicaciones o páginas web que crean planning semanales de dietas
+alimenticias o rutinas de entrenamiento. El precio debe ser adecuado en comparación
+a las funcionalidades que se ofrecen.
