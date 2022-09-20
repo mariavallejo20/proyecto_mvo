@@ -5,24 +5,11 @@ María Vallejo Ortega
 
 # Problema a resolver
 ## Rutina de cuidado facial o skincare
-El problema principal es el desconocimiento de los distintos tipos de productos
-disponibles en el mercado, su uso y aplicación y su combinación con otros para
-llevar a cabo un buen cuidado de la piel.
-Uno de los mayores problemas a la hora de realizar una buena rutina de
-"skincare" es conocer que tipo de piel se tiene y que productos o rutina se
-adecua mejor a cada persona en función de su estilo de vida. Es decir, la rutina
-de cuidado facial debe ser personalizada y enfocada a las necesidades de cada tipo
-de piel, considerando además aspectos como la frecuencia de exposición al sol, el
-uso de maquillaje o el tiempo del que se dispone para cuidar la piel.
+El trabajo de una estética que lleva a cabo limpiezas faciales profesionales es el cuidado de la piel
+para mejorar la estética y eliminar por completo las impurezas y células muertas. Tras una limpieza profesional es indispensable mantener la higiene de la piel con una buena rutina facial, adecuada a las necesidades de la piel de cada cliente. Es decir, el problema es que el/la esteticista debe crear una rutina personalizada para cada cliente.
 
-Como solución a este problema, propongo una aplicación que permita, a través de
-una serie de preguntas especificas extraer la información necesaria, analizarla
-y calcular la rutina facial y productos que mejor se adecuan a la persona. Es decir,
-será un <b>recomendador de rutinas faciales</b>.
-
-# Lógica de negocio
-La lógica de negocio es la de un cliente que genera su propia rutina facial
-personalizada a sus necesidades, pagando un precio por el servicio. Es una Lógica
-similar a la de aplicaciones o páginas web que crean planning semanales de dietas
-alimenticias o rutinas de entrenamiento. El precio debe ser adecuado en comparación
-a las funcionalidades que se ofrecen.
+Como solución, propongo un aplicación que permita, a partir de una serie de características
+observadas por el/la estecisita, como pueden ser la existencia de puntos negros, granos, ausencia de brillo, irritaciones, etc. se cree una rutina facial personalizada con los productos que mejor se adecuen.
+El objetivo principal de este proyecto, será minimizar el tiempo que emplea el experto en crear
+las distintas rutinas, aumentando así el tiempo de productividad que puede emplear en otras citas o 
+tareas.
