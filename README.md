@@ -4,12 +4,17 @@ Grado Ingeniería Informática - Curso 22-23
 María Vallejo Ortega
 
 # Problema a resolver
-## Rutina de cuidado facial o skincare
-El trabajo de una estética que lleva a cabo limpiezas faciales profesionales es el cuidado de la piel
-para mejorar la estética y eliminar por completo las impurezas y células muertas. Tras una limpieza profesional es indispensable mantener la higiene de la piel con una buena rutina facial, adecuada a las necesidades de la piel de cada cliente. Es decir, el problema es que el/la esteticista debe crear una rutina personalizada para cada cliente.
+## Agenda Cultural Andalucía
+El problema a abordar es el conocimiento de la existencia de los distintos eventos
+que se desarrollan en las distintas provincias Andaluzas. Es decir, poder conocer
+las actividades que se llevarán a cabo en cada provincia con el fin de organizar
+el tiempo de ocio de la persona interesada en función de algunos criterios.
 
-Como solución, propongo un aplicación que permita, a partir de una serie de características
-observadas por el/la estecisita, como pueden ser la existencia de puntos negros, granos, ausencia de brillo, irritaciones, etc. se cree una rutina facial personalizada con los productos que mejor se adecuen.
-El objetivo principal de este proyecto, será minimizar el tiempo que emplea el experto en crear
-las distintas rutinas, aumentando así el tiempo de productividad que puede emplear en otras citas o 
-tareas.
+Para solucionar esto, propongo una aplicación, que permita generar un calendario
+semanal de eventos en la Comunidad, pudiendo filtrar los datos en función de la
+provincia, el precio, el tipo de evento, etc. Estos datos podría extraerse de la
+base de datos pública de eventos de la Junta de Andalucía.
+(https://www.juntadeandalucia.es/datosabiertos/portal/dataset/agenda-de-eventos-organizados-por-la-junta-de-andalucia)
+El objetivo principal es minimizar el tiempo que una persona emplea en conocer
+las actividades que se llevarán a cabo en función de sus necesidades y organizar
+su tiempo de ocio en Andalucía.
