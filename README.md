@@ -5,16 +5,11 @@ María Vallejo Ortega
 
 # Problema a resolver
 ## Agenda Cultural Andalucía
-El problema a abordar es el conocimiento de la existencia de los distintos eventos
-que se desarrollan en las distintas provincias Andaluzas. Es decir, poder conocer
-las actividades que se llevarán a cabo en cada provincia con el fin de organizar
-el tiempo de ocio de la persona interesada en función de algunos criterios.
+El principal problema es la dificultad que tiene una persona a la hora de decidir que cocinar, sobre todo teniendo en cuenta los
+ingredientes de los que se dispone o otras comidas realizadas en el día.
 
-Para solucionar esto, propongo una aplicación, que permita generar un calendario
-semanal de eventos en la Comunidad, pudiendo filtrar los datos en función de la
-provincia, el precio, el tipo de evento, etc. Estos datos podría extraerse de la
-base de datos pública de eventos de la Junta de Andalucía.
-(https://www.juntadeandalucia.es/datosabiertos/portal/dataset/agenda-de-eventos-organizados-por-la-junta-de-andalucia)
-El objetivo principal es minimizar el tiempo que una persona emplea en conocer
-las actividades que se llevarán a cabo en función de sus necesidades y organizar
-su tiempo de ocio en Andalucía.
+La solución planteada será crear una aplicación que permita al usuario marcas sus ingredientes y recetas favoritas o que ya hayan probado y deseen repetir en otro momento, y a partir de estos datos se recomienden una serie de recetas, tanto de recetas ya marcadas como otras nueva, pudiendo dar prioridad a las nuevas recetas, en función de los gustos, ingredientes frecuentes o disponibles,etc. 
+
+Las diferentes recetas podrían obtenerse de alguna base de datos, como puede ser la siguiente que he encontrado investigando por internet (https://zenodo.org/record/3749328#.Yy1hfHZBzHp)
+
+Es una buena idea para aplicación en la nube ya que en esta podemos almacenar todas las recetas y acceder a ellas en cualquier momento sin necesidad de tenerlas en nuestro disco local.
