@@ -8,6 +8,7 @@ María Vallejo Ortega
 El principal problema es la dificultad que tiene una persona a la hora de decidir que cocinar, sobre todo teniendo en cuenta los ingredientes de los que se dispone o la cantidad de tiempo del que se dispone para realizar una receta.
 
 La solución planteada será crear una aplicación que permita al usuario obtener recetas de una base de datos en función a dos objetivos:
+
     - Maximizar el número de ingredientes que el usuario tiene disponibles
     - Minimizar el tiempo que el usuario debe emplear para realizar la receta
 
