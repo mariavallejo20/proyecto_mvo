@@ -17,3 +17,9 @@ La idea es tener la posibilidad de que el usuario elija cúal de los dos es su o
 Las diferentes recetas podrían obtenerse de alguna base de datos, como puede ser la siguiente que he encontrado investigando por internet (https://zenodo.org/record/3749328#.Yy1hfHZBzHp)
 
 Es una buena idea para aplicación en la nube ya que en esta podemos almacenar todas las recetas y acceder a ellas en cualquier momento sin necesidad de tenerlas en nuestro disco local.
+
+# Configuración del repositorio y claves
+
+* [Captura del fichero de configuración del repositorio](./configuracion/configuracion.png)
+* [Captura de la configuración de las claves pública y privada](./configuracion/claves.png)
+
