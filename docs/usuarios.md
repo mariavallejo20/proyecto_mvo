@@ -2,7 +2,7 @@
 
 ## Rocío Martín
 Estudiante universitaria, vive en un piso de estudiantes y tiene clase mañana y tarde, lo que 
-le deja muy poco tiempo para decidir que receta preparar y cocinarla.
+le deja muy poco tiempo para decidir que receta preparar y cocinarla, teniendo en cuanta también los ingredientes que le gustan.
 
 ## Francisco Capilla
 Padre de familia, divorciado con 3 hijos. Se encarga de las comidas de sus hijos tras recogerlos del colegio solo algunos dias a la semana y desea complacerlos con recetas que incluyan los ingredientes favoritos de sus hijos.
