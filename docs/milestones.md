@@ -1,9 +1,9 @@
 # Milestones
-## [[M0] Estructura de datos para almacenar recetas.](https://github.com/mariavallejo20/proyecto_mvo/milestone/1)
-Diseño de una estructura de datos que almacena las recetas incluyendo el nombre de la receta, los ingredientes necesarios para su preparación, el tiempo estimado para prepararla y los pasos necesarios para la elaboración.
+## [[M0] Fichero que contiene la estructura de datos para almacenar recetas.](https://github.com/mariavallejo20/proyecto_mvo/milestone/1)
+Diseño de una estructura de datos que almacena las recetas incluyendo el nombre de la receta, los ingredientes necesarios para su preparación, el tiempo estimado para prepararla y los pasos necesarios para la elaboración. El objetivo de este milestone será tener un fichero que almacene todas las recetas con sus atributos en función a la estructura de datos.
 
-## [[M1] Estructura de datos para representar las recetas recomendadas.](https://github.com/mariavallejo20/proyecto_mvo/milestone/2)
-Diseño de una estructura de datos que incluya las recetas que se recomiendan al usuario en función de sus necesidades. Puede incluir una o más recetas, en función de cuantas cumplan los requisitos, o ninguna en caso de que no se obtengan recetas que coincidan con las necesidades del usuario.
+## [[M1] Fichero que contiene la estructura de datos para representar las recetas recomendadas.](https://github.com/mariavallejo20/proyecto_mvo/milestone/2)
+Diseño de una estructura de datos que incluya las recetas que se recomiendan al usuario en función de sus necesidades. Puede incluir una o más recetas, en función de cuantas cumplan los requisitos, o ninguna en caso de que no se obtengan recetas que coincidan con las necesidades del usuario. El objetivo de este milestone será tener un fichero que almacene todas las recetas con sus atributos en función a la estructura de datos.
 
 ## [[M2] Librería para obtener los datos de las recetas.](https://github.com/mariavallejo20/proyecto_mvo/milestone/3)
 Librería que incluye las funciones necesarias para extraer la información sobre las recetas que procedan de fuentes abiertas y almacenarlas en la estructura de datos correspondiente.
