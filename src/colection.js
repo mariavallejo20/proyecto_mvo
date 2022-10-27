@@ -15,3 +15,4 @@ class Colection{
         return this.recetas;
     }
 }
+

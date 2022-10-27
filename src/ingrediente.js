@@ -39,3 +39,4 @@ class Ingrediente{
         return this.unidades;
     }
 }
+

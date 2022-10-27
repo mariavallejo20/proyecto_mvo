@@ -57,3 +57,4 @@ class Receta{
         return this.descripcion;
     }
 }
+

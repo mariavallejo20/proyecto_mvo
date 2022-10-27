@@ -26,3 +26,4 @@ class Usuario{
         return this.email;
     }
 }
+
