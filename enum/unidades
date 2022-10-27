@@ -1,0 +1,12 @@
+const Unidades = {
+    litro: "litro",
+    mililitro: "mililitro",
+    centimetrocubico: "centimetrocubico",
+    kilogramo: "kilogramo",
+    libra: "libra",
+    onza: "onza",
+    cucharasopera: "cucharasopera",
+    cucharapostre: "cucharapostre",   
+}
+
+module.exports = Unidades
