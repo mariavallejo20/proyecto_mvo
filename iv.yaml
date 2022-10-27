@@ -1,4 +1,3 @@
 lenguaje: node.js
 entidad: ./src/colection.js
-objeto valor: [./src/ingrediente.js, ./src/receta.js, ./src/user.js]
 
