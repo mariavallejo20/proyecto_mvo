@@ -1,6 +1,6 @@
-class Colection{
+class Coleccion{
     /**
-     * Constructor de la clase Receta
+     * Constructor de la clase Coleccion
      * @param {Array} recetas
      */
     constructor(recetas){
@@ -8,7 +8,7 @@ class Colection{
     }
 
     /**
-     * Método para obtener el nombre de la receta
+     * Método para obtener las recetas
      * @returns {Array}
      */
      getRecetas(){

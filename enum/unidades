@@ -3,6 +3,7 @@ const Unidades = {
     mililitro: "mililitro",
     centimetrocubico: "centimetrocubico",
     kilogramo: "kilogramo",
+    gramo: "gramo",
     libra: "libra",
     onza: "onza",
     cucharasopera: "cucharasopera",
