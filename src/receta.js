@@ -1,6 +1,11 @@
 const Unidades = require("./enum/unidades")
 
 class Receta{
+
+    /**
+     * Clase Receta para especificar la información de cada receta (tiempo de realización, ingredientes, número de pasos...)
+     */
+
     /**
      * Constructor de la clase Receta
      * @param {String} nombre
