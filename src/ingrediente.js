@@ -3,6 +3,10 @@ const Unidades = require("./enum/unidades")
 class Ingrediente{
 
     /**
+     * Clase Ingrediente para identificar el ingrediente y conocer en que unidades se mide.
+     */
+
+    /**
      * Constructor de la clase Ingrediente
      * @param {String} nombre
      * @param {int} id_ingrediente
