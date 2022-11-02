@@ -9,7 +9,7 @@ class Receta{
     /**
      * Constructor de la clase Receta
      * @param {String} nombre
-     * @param {Map} ingredientes
+     * @param {Map} ingredientes //map que contiene el ID del ingrediente y su cantidad
      * @param {int} tiempo
      * @param {int} num_pasos
      * @param {Array} descripcion
