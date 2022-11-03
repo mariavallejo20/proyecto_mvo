@@ -30,6 +30,11 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 ## Task runner 
 * [Task Runner](./docs/task_runner.md)
 
+# Comprobación de la sintaxis de las entidades
+* Comando para la comprobación de la sintaxis de las entidades en node.js
+```shell
+    make check
+```
 
 # Configuración del repositorio y claves
 
