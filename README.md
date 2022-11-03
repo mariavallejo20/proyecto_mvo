@@ -27,6 +27,9 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 ## Gestor de dependencias
 * [Gestor de dependencias](./docs/gestor_dependencias.md)
 
+## Task runner 
+* [Task Runner](./docs/task_runner.md)
+
 
 # Configuración del repositorio y claves
 
