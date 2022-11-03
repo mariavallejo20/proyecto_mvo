@@ -18,8 +18,5 @@
   "bugs": {
     "url": "https://github.com/mariavallejo20/proyecto_mvo/issues"
   },
-  "homepage": "https://github.com/mariavallejo20/proyecto_mvo#readme",
-  "dependencies": {
-    "make": "^0.0.0"
-  }
+  "homepage": "https://github.com/mariavallejo20/proyecto_mvo#readme"
 }
