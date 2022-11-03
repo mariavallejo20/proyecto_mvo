@@ -9,11 +9,11 @@ class Usuario{
 
     /**
      * Constructor de la clase Usuario
-     * @param {String} nombre
-     * @param {String} email
-     * @param {Array} ingredientes_disponibles
-     * @param {int} tiempo_disponible
-     * @param {Array} recetas_propuestas
+     * @param {String} nombre //nombre del usuario
+     * @param {String} email //email a través del cual se identifica al usuario
+     * @param {Array} ingredientes_disponibles //lista de ingredientes de los que dispone el usuario
+     * @param {int} tiempo_disponible //tiempo del que dispone el usuario
+     * @param {Array} recetas_propuestas //lista de las recetas propuestas al usuario en base al tiempo y/o a los ingredientes de los que dispone
      */
 
     constructor(nombre, email, ingredientes_disponibles, tiempo_disponible, recetas_propuestas){
