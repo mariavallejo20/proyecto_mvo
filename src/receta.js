@@ -8,11 +8,11 @@ class Receta{
 
     /**
      * Constructor de la clase Receta
-     * @param {String} nombre
+     * @param {String} nombre //nombre de la receta
      * @param {Map} ingredientes //map que contiene el ID del ingrediente y su cantidad
-     * @param {int} tiempo
-     * @param {int} num_pasos
-     * @param {Array} descripcion
+     * @param {int} tiempo //tiempo que se emplea en la realización de la receta (en minutos)
+     * @param {int} num_pasos //número de pasos necesarios para realizar la receta
+     * @param {Array} descripcion //descripción de los pasos para realizar la receta
      */
     constructor(nombre, ingredientes, tiempo, num_pasos, descripcion){
         this.nombre = nombre;
