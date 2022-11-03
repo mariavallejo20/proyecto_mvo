@@ -3,3 +3,4 @@ entidad: ./src/usuario.js
 automatizar: 
   fichero: Makefile
   orden: make
+
