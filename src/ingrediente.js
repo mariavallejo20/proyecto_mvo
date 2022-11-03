@@ -8,9 +8,9 @@ class Ingrediente{
 
     /**
      * Constructor de la clase Ingrediente
-     * @param {String} nombre
-     * @param {int} id_ingrediente
-     * @param {Unidades} unidades
+     * @param {String} nombre // nombre del ingrediente
+     * @param {int} id_ingrediente // ID con el que se va a identificar al ingrediente
+     * @param {Unidades} unidades // Unidades en las que el ingrediente se suele representar
      */
 
     constructor(nombre, id_ingrediente, unidades){
