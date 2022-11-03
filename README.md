@@ -24,6 +24,9 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 * [Milestones](./docs/milestones.md)
 * [Historias de Usuario](./docs/historias_usuario.md)
 
+## Gestor de dependencias
+* [Gestor de dependencias](./docs/gestor_dependencias.md)
+
 
 # Configuración del repositorio y claves
 
