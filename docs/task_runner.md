@@ -1,8 +1,6 @@
 # Task runner
 ## Documentación sobre los distintos task runner
 
-Un task runner o gestor de tareas nos permite automatizar tareas comunes y, a menudo, tediosas. Por ello he realizado un estudio sobre distintos gestores de tareas que se pueden emplear para el proyecto, las posibilidades son las siguientes:
-
 * **Make**: Esta herramienta se utiliza principalmente para compilar y construir programas. Permite que el autor del código fuente establezca los pasos necesarios para construir un proyecto específico, pudiendo generar unos archivos a partir de otros. El uso de make es fácil ya que solo se debe describir una tarea usando comandos shell y make la ejecutará. Además de esto, make puede utilizarse para cualquier lenguaje. Para todo esto make utiliza un fichero denominado “makefile”. 
 Considero make como una de mis opciones principales, ya que es con la que estoy más familiarizada debido a su uso anterior.
 

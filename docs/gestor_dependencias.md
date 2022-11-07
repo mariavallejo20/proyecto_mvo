@@ -1,9 +1,6 @@
 # Gestor de dependencias
 ## Documentación sobre distintos gestores de tareas
 
-La gestión de dependencias es el proceso de automatización de la instalación, actualización, configuración y eliminación de las dependencias necesarias.
-Algunos de los gestores que contribuyen en este proceso son:
-
 * **NPM (Node Package Manager)**: Desarrollado en Node.JS. En Node.JS el código se encuentra estructurado por módulos, que a medida que vamos trabajando iremos necesitando agregar más de estos según sea el caso y es en este punto donde justamente entra NPM, permitiendo agregar dependencias de forma simple, distribuir paquetes y administrar eficazmente los módulos de cualquier proyecto. Con npm viene la mayor selección de paquetes creados por la comunidad de cualquier ecosistema de programación, lo que hace que la construcción de aplicaciones Node.js sea rápida y fácil. 
 Una parte importante de esta herramienta es conocer los 2 ficheros principales:
 
