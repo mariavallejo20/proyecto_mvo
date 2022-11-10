@@ -1,32 +1,36 @@
 # Task runner
-## Documentación sobre los distintos task runner
-
-* **Make**: Esta herramienta se utiliza principalmente para compilar y construir programas. Permite que el autor del código fuente establezca los pasos necesarios para construir un proyecto específico, pudiendo generar unos archivos a partir de otros. El uso de make es fácil ya que solo se debe describir una tarea usando comandos shell y make la ejecutará. Además de esto, make puede utilizarse para cualquier lenguaje. Para todo esto make utiliza un fichero denominado “makefile”. 
-Considero make como una de mis opciones principales, ya que es con la que estoy más familiarizada debido a su uso anterior.
-
-* **Grunt**: Grunt es un task runner de línea de comandos y se basa en el entorno en tiempo de ejecución Node.js. Al ser un gestor de tareas específico para Javascript nos permite realizar las tareas más comunes en nuestro código Javascript, como pueden ser el control de calidad(JSLint), minimización y concatenación de archivos, también nos puede servir para automatizar el pase de una batería de test antes de realizar estos pasos. Para la gestión de tareas emplea el archivo “gruntfile.js”
-Este gestor actualmente es muy utilizado por los desarrolladores, por lo que cuenta con una gran comunidad activa. Por esto, Grunt también la tendré en cuenta como una de mis opciones.
-
-* **Gulp**:  Gulp es otro task runner basado en node.js y muy similar a Grunt, aunque un poco más rápido que este ya que Gulp lleva a cabo los procesos en la memoria principal y escribe en los archivos directamente, lo que le permite tener una mayor velocidad. Para especificación de tareas emplea el archivo “gulpfile.js”. Por otro lado, una de las principales desventajas de este gestor es la seguridad.
-Aunque Gulp podría ser una buena opción, el tema de seguridad ha hecho que la descarte como una de mis opciones.
-
-* **Bun**:  Bun es un paquete de JS y CSS, un transpilador de JS, un entorno de tiempo de ejecución de JS, un gestor de tareas y mucho más . Lo que hace que Bun sea tan especial es su increíble rendimiento.
-El equipo de Bun aconseja que solo use Bun durante el desarrollo de su aplicación ya que Bun aún no minimiza su código y la eliminación del código muerto no es óptima, parte que es realmente importante en el proceso de producción. Además, Bun todavía se encuentra en una etapa muy temprana de desarrollo.
-Por esto, he decidido descartar Bun como una de mis opciones en cuanto al gestor de tareas.
-
 
 ## Criterios a seguir para la elección
+Para poder elegir un gestor de tareas que se adecue a las buenas prácticas del lenguaje de programación de mi servicio tendré en cuenta:
+1. Buenas prácticas:
+    * Debemos tener en cuenta que se aconseja con mayor frecuencia por las desarrolladores.
+    * Criterios específicos de mi proyecto:
+        * Se trata de un proyecto de pequeño tamaño
+        * Se debe tener en cuenta la velocidad del gestor.
+        * La capacidad del gestor de realizar tareas de distintos tipos.
+3. Actualización del gestor: Se deberá tener en cuenta la comunidad de la que dispone el gestor, ya que se busca tener un buen mantenimiento y actualización. Un buen soporte desembocará en una mayor seguridad, criterio que debemos tener en cuenta ya que es importante.
 
-Para poder elegir un task runner que se adecue a las buenas prácticas de mi servicio tendré en cuenta:
-* Será necesario que permita gestionar tareas en NodeJS, ya que es el que se utilizará.
-* Que cuente con una gran comunidad, que nos garantice un mantenimiento continúo.
-* Que permita gestionar las tareas fácilmente y de manera organizada, desde un único fichero.
-* Deberá tratarse de un gestor fácil de utilizar y aprender, para minimizar el tiempo de aprendizaje antes del desarrollo.
+## Documentación sobre los distintos task runner
+
+* **Make**: 
+    - Make cuenta con una gran comunidad de desarrolladores, por ello cuenta con un gran mantenimiento y actualización continua. Esto permite disminuir el riesgo de deuda técnica en un futuro.
+    - Es un gestor de tareas que puede utilizarse para cualquier lenguaje usando comandos shell y solo utiliza un fichero denominado "makefile".
+    - Puede utilizarse para llevar a cabo gran cantidad de tareas de diferentes tipos.
+
+* **Grunt**: 
+    - Grunt utiliza Node.js, por ello, es aconsejado por algunos desarrolladores.
+    - Está capacitado para automatizar gran cantidad de tareas, sin embargo, estas son menos que las que puede realizar make.
+    -  Grunt normalmente solo manejará una tarea a la vez, lo que disminuye la velocidad. Este aumento del tiempo se ve reflejado, sobre todo, en proyectos de gran tamaño.
+    - Es una herramienta que cuenta con una comunidad grande y útil con una amplia gama de complementos para elegir, actualmente hay alrededor de 6000 complementos de Grunt.
+
+* **Gulp**:  
+    - Gulp utiliza Node.js, por ello, es aconsejado por algunos desarrolladores.
+    - Está capacitado para automatizar gran cantidad de tareas, sin embargo, estas son menos que las que puede realizar make.
+    - Gulp puede procesar varias tareas al mismo tiempo, aumentando la velocidad. Esta ventaja se ve reflejada, sobre todo, en proyectos de gran tamaño.
+    - Es una herramienta, a pesar de ser la más nueva, que cuenta con una comunidad grande y con una amplia gama de complementos para elegir, actualmente hay alrededor de 2700 complementos de Gulp.
+    - El uso de Gulp está menos extendido que el de Grunt o Make.
 
 ## Elección
 
-Una vez establecidos los criterios para la elección del task runner, **he decidido quedarme con “make”**, debido a lo siguiente:
-* Pienso que es una de las herramientas más utilizadas, lo que nos garantiza el gran mantenimiento. 
-* Es un gestor con el que estoy familiarizada, lo que minimiza el tiempo de aprendizaje.
-* Nos permite gestionar tareas y mucho más en cualquier lenguaje desde comandos en shell, adecuándose perfectamente a mi servicio.
-* Cuenta con una gran documentación, que nos ayudará a la hora de la detección de errores o problemas durante el desarrollo.
+Una vez establecidos los criterios para la elección del task runner, he decidido descartar Gulp ya que es el menos extendido y desactualizado. Por otro lado, he descartado Grunt, ya que aunque su uso es más extendido, es un gestor que depende de otros complementos, lo que nos puede provocar deuda técnica en el futuro. 
+Finalmente, **he decidido elegir "Make" como mi gestor de tareas** ya que es un gestor que cuenta con una actualización continua, puede realizar una gran cantidad de tareas diversas y cuenta con una gran comunidad de desarrolladores, documentación y tutoriales.
