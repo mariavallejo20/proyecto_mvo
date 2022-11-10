@@ -19,7 +19,7 @@ Para poder elegir un gestor de dependencias que se adecue a las buenas práctica
     - Es un gestor aconsejado por una gran comunidad de desarrolladores.
     - Cuenta una gran comunidad y con un buen soporte y mantenimiento, con varias actualizaciones al año y siendo la última hace 5 meses.
     - Para la gestión de dependencias utiliza el archivo "package.json".
-    - La instalación de paquetes no es demasiado rápida, sin embargo, teniendo en cuenta el tamaño de mi proyecto y la cantidad de dependencias que tendrá, este no será un gran inconveniente.
+    - Uno de los principales inconvenientes de NPM es la velocidad con la que instala las dependencias.
     - NPM realiza una evaluación de seguridad a partir de la versión 6, lo que ayuda a evitar vulnerabilidades y asegura que ninguna dependencia sea incompatible.
     - NPM habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
 
@@ -27,7 +27,7 @@ Para poder elegir un gestor de dependencias que se adecue a las buenas práctica
     - Junto con NPM es el gestor de dependencias más utiizado por los desarrolladores de NodeJS.
     - Cuenta con un buen soporte y mantenimiento, con varias actualizaciones anuales; la última hace 5 meses.
     - Emplea para la gestión el archivo "package.json" lo que nos permite disminuir la posibilidad de crear deuda técnica en el futuro.
-    - Yarn instala las dependencias en paralelo permitiéndote agregar múltiples archivos simultáneamente, lo que aumenta la velocidad de instalación de las dependencias. Sin embargo, teniendo en cuenta el tamaño de nuestro proyecto está no es una ventaja significativa, aunque si habría que tenerlo en cuenta para proyectos mayores.
+    - Una de las principales ventajas de Yarn es la velocidad con la que instala las dependencias.
     - Mientra descarga paquetes, Yarn realiza una verificación de seguridad en segundo plano, aumentando la seguridad.
     - Yarn habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
 
