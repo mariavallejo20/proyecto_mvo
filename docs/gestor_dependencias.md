@@ -23,9 +23,6 @@ Para poder elegir un gestor de dependencias que se adecue a las buenas práctica
     - NPM realiza una evaluación de seguridad a partir de la versión 6, lo que ayuda a evitar vulnerabilidades y asegura que ninguna dependencia sea incompatible.
     - NPM habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
 
-* **Bower**: 
-    - Para la gestión de dependencias emplea el archivo "boxer.json", lo que no cumple con la práctica extendida por la mayoría de los desarrolladores. Esto puede provocar deuda técnica en un futuro, por lo que lo descartaré como una opción.
-
 * **Yarn**: 
     - Junto con NPM es el gestor de dependencias más utiizado por los desarrolladores de NodeJS. Sin embargo, este no viene instalado con la instalación del lenguaje.
     - Cuenta con un buen soporte y mantenimiento, con varias actualizaciones anuales; la última hace 5 meses.
