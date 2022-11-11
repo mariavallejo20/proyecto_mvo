@@ -15,16 +15,16 @@ Para poder elegir un gestor de dependencias que se adecue a las buenas práctica
 
 ## Posibles gestores de dependencias
 
-* **NPM (Node Package Manager)**: 
+* **npm (Node Package Manager)**: 
     - Es un gestor aconsejado por una gran comunidad de desarrolladores.
     - Cuenta una gran comunidad y con un buen soporte y mantenimiento, con varias actualizaciones al año y siendo la última hace 5 meses.
     - Para la gestión de dependencias utiliza el archivo "package.json".
-    - Uno de los principales inconvenientes de NPM es la velocidad con la que instala las dependencias.
-    - NPM realiza una evaluación de seguridad a partir de la versión 6, lo que ayuda a evitar vulnerabilidades y asegura que ninguna dependencia sea incompatible.
-    - NPM habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
+    - Uno de los principales inconvenientes de npm es la velocidad con la que instala las dependencias.
+    - npm realiza una evaluación de seguridad a partir de la versión 6, lo que ayuda a evitar vulnerabilidades y asegura que ninguna dependencia sea incompatible.
+    - npm habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
 
 * **Yarn**: 
-    - Junto con NPM es el gestor de dependencias más utiizado por los desarrolladores de NodeJS.
+    - Junto con npm es el gestor de dependencias más utiizado por los desarrolladores de NodeJS.
     - Cuenta con un buen soporte y mantenimiento, con varias actualizaciones anuales; la última hace 5 meses.
     - Emplea para la gestión el archivo "package.json" lo que nos permite disminuir la posibilidad de crear deuda técnica en el futuro.
     - Una de las principales ventajas de Yarn es la velocidad con la que instala las dependencias.
@@ -32,16 +32,16 @@ Para poder elegir un gestor de dependencias que se adecue a las buenas práctica
     - Yarn habilita espacios de trabajo, lo que le permite administrar dependencias para varios proyectos desde un único repositorio.
 
 * **pnpm**: 
-    - PNPM es más rápido que los anteriores a la hora de las instalación de dependencias, sobre todo para paquetes de mayor tamaño.
-    - En la seguridad NPM es similar a Yarn, ya que también emplea sumas de verificación. Además, pnpm 
+    - pnpm es más rápido que los anteriores a la hora de las instalación de dependencias, sobre todo para paquetes de mayor tamaño.
+    - En la seguridad npm es similar a Yarn, ya que también emplea sumas de verificación. Además, pnpm 
     verifica la integridad de su código antes de ejecutarlo.
-    - PNPM cuenta con una gran comunidad de desarrolladores y un buen soporte, con actualizaciones frecuentes.
+    - pnpm cuenta con una gran comunidad de desarrolladores y un buen soporte, con actualizaciones frecuentes.
     - Para la gestión de dependencias utiliza el archivo "package.json".
 
 ## Elección
 
 Tras documentarme sobre los diferentes gestores de dependencias y una vez establecidos los criterios que cumplen o no cada uno de ellos, he decidido lo siguiente:
 
-NPM, Yarn y PNPM son buenas opciones para usar en mi proyecto.
-He decidido descartar NPM ya que aunque presenta una características similares a las demás pero tiene un rendimiento y velocidad de instalación menor a las otras.
-Por otro lado, entre PNPM y Yarn, he decidido escoger PNPM, ya que ambas tienes características similares que cumplen los criterios establecidos, buen soporte y documentación, pero PNPM presenta una mayor velocidad de instalación de los paquetes.
+npm, Yarn y pnpm son buenas opciones para usar en mi proyecto.
+He decidido descartar npm ya que aunque presenta una características similares a las demás pero tiene un rendimiento y velocidad de instalación menor a las otras.
+Por otro lado, entre pnpm y Yarn, he decidido escoger pnpm, ya que ambas tienes características similares que cumplen los criterios establecidos, buen soporte y documentación, pero pnpm presenta una mayor velocidad de instalación de los paquetes.
