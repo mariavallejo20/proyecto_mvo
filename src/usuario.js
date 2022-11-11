@@ -37,7 +37,6 @@ class Usuario{
         return this.email;
     }
 
-
     /**
      * Método para obtener el tiempo disponible en minutos
      * @returns {int}

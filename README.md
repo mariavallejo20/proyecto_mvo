@@ -24,6 +24,17 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 * [Milestones](./docs/milestones.md)
 * [Historias de Usuario](./docs/historias_usuario.md)
 
+## Gestor de dependencias
+* [Gestor de dependencias](./docs/gestor_dependencias.md)
+
+## Task runner 
+* [Task Runner](./docs/task_runner.md)
+
+# Comprobación de la sintaxis de las entidades
+* Comando para la comprobación de la sintaxis de las entidades en node.js
+```shell
+    make check
+```
 
 # Configuración del repositorio y claves
 
