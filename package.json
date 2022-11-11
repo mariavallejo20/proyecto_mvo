@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/mariavallejo20/proyecto_mvo/issues"
   },
-  "homepage": "https://github.com/mariavallejo20/proyecto_mvo#readme"
+  "homepage": "https://github.com/mariavallejo20/proyecto_mvo#readme",
+  "dependencies": {
+    "pnpm": "^7.15.0"
+  }
 }
