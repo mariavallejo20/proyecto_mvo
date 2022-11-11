@@ -1,7 +1,10 @@
+# Variables
+ficheros = $(shell ls ./src/*.js)
+
 # Tareas definidas
 
 all: check
 
-# Comprobación de la sintaxis de node.js en el fichero usuario.js
+# Comprobación de la sintaxis de node.js en los ficheros
 check:
-	node --check ./src/usuario.js
+	$(foreach fichero, $(ficheros), node --check $(fichero);)
