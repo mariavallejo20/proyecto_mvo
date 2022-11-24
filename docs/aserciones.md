@@ -3,7 +3,6 @@
 ## Criterios a seguir para la elección
 Para poder elegir una librería de aserciones que se adecue a las buenas prácticas del lenguaje tendré en cuenta:
 1.	Buenas prácticas:
-      - Debemos tener en cuenta que se aconseja con mayor frecuencia por los desarrolladores.
       - Se debe tener en cuenta los estilos de aserciones que permite la biblioteca.
 2.	Mantenimiento de la biblioteca: Se deberá tener en cuenta la comunidad de la que dispone, ya que se busca tener un buen mantenimiento y actualización, disminuyendo la posibilidad de deuda técnica en el futuro.
 
