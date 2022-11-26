@@ -9,7 +9,7 @@ class Ingrediente{
      * @param {int} id_ingrediente // ID con el que se va a identificar al ingrediente
      */
 
-    constructor(nombre, id_ingrediente, tiempo_cocer, tiempo_frito, tiempo_plancha){
+    constructor(nombre, id_ingrediente){
         this.nombre = nombre;
         this.id_ingrediente = id_ingrediente;
     }
