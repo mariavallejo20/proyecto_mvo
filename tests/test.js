@@ -31,4 +31,22 @@ describe ('Clase Usuario', function(){
         });
     });
 
+    // Testeamos que el email del usuario NO sea una cadena vacía
+    describe('Email usuario', function(){
+
+        // Obtendremos un error si la cadena del nombre NO es superior a 0
+        it('El email de usuario NO puede ser una cadena vacía', function(){
+            //Ajustar
+            var nombre = 'Maria Vallejo';
+            var email = 'mariavallejo20@correo.ugr.es';
+            
+            //Actuar
+            var nuevo_usuario = new Usuario(nombre, email, null, null);
+
+            //Afirmar
+            assert.isAbove(nuevo_usuario.getEmail().length, 0);
+            
+        });
+    });
+
 })
