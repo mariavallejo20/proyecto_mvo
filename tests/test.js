@@ -17,7 +17,7 @@ describe ('Clase Usuario', function(){
     describe('Nombre usuario', function(){
 
         // Obtendremos un error si la cadena del nombre NO es superior a 0
-        it('El nombre de usuario NO puede ser una cadena vacía', function(){
+        it('El nombre del usuario NO puede ser una cadena vacía', function(){
             //Ajustar
             var nombre = 'Maria Vallejo';
             var email = 'mariavallejo20@correo.ugr.es';
@@ -34,8 +34,8 @@ describe ('Clase Usuario', function(){
     // Testeamos que el email del usuario NO sea una cadena vacía
     describe('Email usuario', function(){
 
-        // Obtendremos un error si la cadena del nombre NO es superior a 0
-        it('El email de usuario NO puede ser una cadena vacía', function(){
+        // Obtendremos un error si la cadena del email NO es superior a 0
+        it('El email del usuario NO puede ser una cadena vacía', function(){
             //Ajustar
             var nombre = 'Maria Vallejo';
             var email = 'mariavallejo20@correo.ugr.es';
@@ -45,6 +45,25 @@ describe ('Clase Usuario', function(){
 
             //Afirmar
             assert.isAbove(nuevo_usuario.getEmail().length, 0);
+            
+        });
+    });
+
+    // Testeamos que el email del usuario NO sea una cadena vacía
+    describe('Tiempo disponible usuario', function(){
+
+        // Obtendremos un error si la cadena del email NO es superior a 0
+        it('El tiempo disponible del usuario debe ser mayor que 0', function(){
+            //Ajustar
+            var nombre = 'Maria Vallejo';
+            var email = 'mariavallejo20@correo.ugr.es';
+            var tiempo_disponible = 10;
+            
+            //Actuar
+            var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, null);
+
+            //Afirmar
+            assert.isAbove(nuevo_usuario.getTiempoDisponible(), 0);
             
         });
     });
