@@ -1,4 +1,4 @@
-class Usuario{
+export default class Usuario{
     /**
      * Esta clase contendrá la información del usuario. 
      * Se podrá identificar con el email.
@@ -33,7 +33,7 @@ class Usuario{
      * Método para obtener el nombre del usuario
      * @returns {String}
      */
-     getEmail(){
+    getEmail(){
         return this.email;
     }
 
@@ -53,4 +53,3 @@ class Usuario{
         return this.recetas_propuestas;
     }
 }
-
