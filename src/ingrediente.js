@@ -1,7 +1,4 @@
-const Unidades = require("./enum/unidades")
-
 class Ingrediente{
-
 
     /**
      * Constructor de la clase Ingrediente
