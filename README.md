@@ -38,6 +38,11 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 ```shell
     make check
 ```
+# Testeo de la lógica de negocio
+* Comando para testear la lógica de negocio
+```shell
+    make test
+```
 
 # Configuración del repositorio y claves
 

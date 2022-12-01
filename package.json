@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "check": "make check",
-    "test": "mocha ./tests"
+    "test": "make test"
   },
   "author": "María Vallejo Ortega",
   "license": "GNU General Public License v3.0",
