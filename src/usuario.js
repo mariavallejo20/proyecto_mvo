@@ -52,4 +52,24 @@ export default class Usuario{
      getRecetasPropuestas(){
         return this.recetas_propuestas;
     }
+
+    /**
+     * Método para comprobar el tiempo de una Receta
+     * @param {Receta} receta 
+     */
+    ComprobarTiempo(receta)
+    {
+        if (receta.getTiempo() <= this.getTiempoDisponible())
+        {
+            this.recetas_propuestas.push(receta);
+        }
+    }
+ 
+    /** 
+      * Método que crea las recetas propuestas
+      */
+    RecomendarRecetasTiempo(recetas)
+    {
+        recetas.forEach(receta => this.ComprobarTiempo(receta));
+    }
 }

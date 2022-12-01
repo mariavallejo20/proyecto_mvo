@@ -88,7 +88,7 @@ describe ('Clase Usuario', function(){
             var recetas_total = [receta1, receta2, receta3, receta4];
 
             // Usuario nuevo
-            var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, null);
+            var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
             nuevo_usuario.RecomendarRecetasTiempo(recetas_total);
@@ -98,6 +98,9 @@ describe ('Clase Usuario', function(){
 
             //Comprobamos el tiempo para todas las recetas
             nuevo_recetas_propuestas.forEach(receta => assert.isAtMost(receta.getTiempo(), nuevo_usuario.getTiempoDisponible()));
+            
+            //Comprobamos que se recomiendan las 3 recetas esperadas
+            assert.equal(nuevo_recetas_propuestas.length, 3, "Se espera recomendar 3 recetas");
         });
     });
 
