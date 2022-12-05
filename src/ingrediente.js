@@ -2,13 +2,11 @@ class Ingrediente{
 
     /**
      * Constructor de la clase Ingrediente
-     * @param {String} nombre // nombre del ingrediente
-     * @param {int} id_ingrediente // ID con el que se va a identificar al ingrediente
+     * @param {String} nombre // nombre del ingrediente (Identificará cada ingrediente)
      */
 
-    constructor(nombre, id_ingrediente){
+    constructor(nombre){
         this.nombre = nombre;
-        this.id_ingrediente = id_ingrediente;
     }
 
     /**
@@ -17,14 +15,6 @@ class Ingrediente{
      */
      getNombre(){
         return this.nombre;
-    }
-
-    /**
-     * Método para obtener el id del ingrediente
-     * @returns {int}
-     */
-     getId(){
-        return this.id_ingrediente;
     }
 }
 
