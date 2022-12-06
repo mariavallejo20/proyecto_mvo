@@ -25,13 +25,17 @@ Para poder elegir un test runner que se adecue a las buenas prácticas del lengu
     - Jest cuenta con su propia biblioteca de aserciones, lo que anula la posibilidad de elegir otro deseado.
     
 * **Jasmine:**
-    - Jasmine parece no ser compatible aún con el formato TAP, como podemos apreciar [aquí]()
+    - Este test runner soporta el formato TAP.    
     - Es un test runner que también está extendido entre los desarrolladores, aunque su comunidad es menor que la de los anteriores.
     - Cuenta con una gran flexibilidad, ya que, al igual que mocha, nos permite elegir la biblioteca de aserciones que queremos utilizar.
     - Tiene un buen mantenimiento, con actualizaciones recientes y una reciente actividad en su [repositorio de github](https://github.com/jasmine/jasmine).
+
+* **Ava:**
+    - Ava es un test runner también popular entre los desarrolladores, que cuenta con una amplia comunidad y un buen mantenimiento, como podemos apreciar en su [repositorio de github](https://github.com/avajs/ava).
+    - Cuenta con actualizaciones continuas y bastante recientes.
+    - Ava es compatible con el formato TAP.
+    - Ava no tiene incorporada biblioteca de aserciones, pero te permite utilizar cualquiera.
     
 ## Elección
-Tras documentarme sobre los diferentes posibilidades y una vez establecidos los criterios que cumplen o no cada uno de ellos, he decidido lo siguiente:
-* En primer lugar, descarto Jasmine ya que no es compatible con el formato estándar TAP.
-* En segundo lugar, descarto Jest, ya que no me permite elegir una biblioteca de aserciones al contar con la suya propia. Aunque esto podría ser una ventaja a la hora de incluir todo en el test runner, prefiero poder elegir una biblioteca de aserciones.
-* Por tanto, **he decidido decantarme por utilizar Mocha**, ya que atendiendo a los criterios cuenta con una mayor popularidad entre los desarrolladores y una mayor flexibilidad. Además de cumplir con el estándar TAP y permitirme elegir una biblioteca de aserciones. 
+Tras documentarme sobre los diferentes posibilidades y una vez establecidos los criterios he podido apreciar que cualquier test runner de los mencionados podría ser una buena opción. Para poder hacer una elección me he ayudado de [npm trends](https://npmtrends.com/ava-vs-jasmine-vs-jest-vs-mocha) donde he comparado los 4 tests runner.
+En esta comparación he podido apreciar que Mocha y Jest son los más utilizados, con mayor comunidad y mantenimiento. Sin embargo, las diferencias entre estos dos no son significativas y cualquiera podría ser una buena opción atendiendo a las características y envergadura de mi proyecto, por tanto, **he decidido decantarme por utilizar Mocha**. 
