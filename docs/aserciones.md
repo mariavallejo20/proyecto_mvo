@@ -7,7 +7,6 @@ Para poder elegir una librería de aserciones que se adecue a las buenas prácti
 2.	Mantenimiento de la biblioteca: Se deberá tener en cuenta la comunidad de la que dispone, ya que se busca tener un buen mantenimiento y actualización, disminuyendo la posibilidad de deuda técnica en el futuro.
 
 ## Posibles librerías de aserciones:
-Atendiendo a las bibliotecas de aserciones que se pueden extraer de la [documentación de mocha]( https://mochajs.org/#assertions) tenemos:
 
 * **Should.js:**
       - Se trata de una librería de aserciones del tipo BDD, es decir, se caracteriza por tener un estilo verboso, cercano al lenguaje cotidiano.
@@ -21,6 +20,10 @@ Atendiendo a las bibliotecas de aserciones que se pueden extraer de la [document
       - Chai es una biblioteca de aserciones que incluye los dos estilos BDD / TDD. Es decir, nos permitirá utilizar el lenguaje expresivo y legible del estilo BDD o la sensación clásica del estilo TDD.
       -  Cuenta con una gran comunidad de desarrolladores, ya que es la más extendida y popular.
       - Cuenta con recientes actualizaciones, buen mantenimiento y una comunidad activa, como podemos apreciar en su [repositorio de github]( https://github.com/chaijs/chai). Siendo su última actualización hace tan solo unos días.
+
+* **Assert:**
+      - Assert es una biblioteca de aserciones popular entre los desarrolladores de javasrcript, sin embargo, no cuenta con actualizaciones recientes ni con una comunidad activa como podemos apreciar en su [repositorio de github](https://github.com/browserify/commonjs-assert)
+      - Se trata de una librería de aserciones del tipo TDD.
 
 ## Elección
 Tras documentarme sobre las diferentes bibliotecas de aserciones y una vez establecidos los criterios que cumplen o no cada uno de ellos, **he decidido decantarme por Chai** ya que es la más extendida y mantenida, lo que disminuye la posibilidad de tener deuda técnica en el futuro; y presenta una mayor flexibilidad al permitir utilizar varios estilos de aserciones.
