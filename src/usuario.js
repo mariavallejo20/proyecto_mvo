@@ -1,3 +1,5 @@
+import Receta from '../src/receta.js'
+
 export default class Usuario{
     /**
      * Esta clase contendrá la información del usuario. 
@@ -56,40 +58,52 @@ export default class Usuario{
     /**
      * Método para seleccionar la mejor receta
      * Será mejor aquella receta que tenga menor tiempo
-     * @param {Receta} receta 
+     * @param {Array} recetas
      */
     SeleccionarReceta(recetas)
     {
-        MejorTiempo = 2039410394
+        var mejorTiempo = 500
+        var mejorReceta = new Receta()
 
+        // Recorro las recetas cogiendo el tiempo necesario de cada receta
         recetas.forEach(receta => {
-            tiempoReceta = receta.getTiempo()
+            var tiempoReceta = receta.getTiempo()
             
-            if (tiempoReceta < MejorTiempo)
-                MejorTiempo = tiempoReceta
+            // Si el tiempo de la mejor receta hasta el momento es mayor que el de la receta actual
+            // Me quedo con la receta actual
+            if (tiempoReceta <= mejorTiempo)
+                mejorTiempo = tiempoReceta
+                mejorReceta = receta
         });
 
-        return MejorTiempo;
+        // Devuelvo la receta con el menor tiempo 
+        return mejorReceta;
+
     }
  
     /** 
-      * Método que crea las recetas propuestas
+      * Método que crea las recetas propuestas (ALGORITMO GREEDY)
+      * @param {Array} recetas
       */
     RecomendarRecetasTiempo(recetas)
     {
-        recetasTotal = recetas
+        var recetasTotal = recetas
+        var rep = recetas.length
+
         // Recorro todas las recetas
-        while (recetasTotal.lenght != 0)
+        for (var i = 0; i < rep; i++)
         {
             // Selecciono el mejor candidato de conjunto de recetas mediante una función
-            recetaSeleccionada = this.SeleccionarReceta(recetasTotal)
-            //Eliminamos del conjunto de receta la seleccionada
-            recetasTotal = recetas.filter(receta => receta != recetaSeleccionada)
+            var recetaSeleccionada = this.SeleccionarReceta(recetasTotal)
+            // Eliminamos del conjunto de receta la seleccionada
+            //recetasTotal = recetasTotal.filter(receta => receta != recetaSeleccionada)
+            var indice = recetasTotal.indexOf(recetaSeleccionada)
+            recetasTotal.splice(indice,1)
 
             // Si es factible, es decir, si se adecua al tiempo disponible del usuario
             // la añadimos al array de soluciones (recetas recomendadas para el usuario)
             if (recetaSeleccionada.getTiempo() <= this.getTiempoDisponible())
-                this.recetas_propuestas.push(recetaSeleccionada)
-        } 
+                this.recetas_propuestas.push(recetaSeleccionada) 
+        }
     }
 }

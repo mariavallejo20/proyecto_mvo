@@ -69,7 +69,7 @@ describe ('Clase Usuario', function(){
         });
     });
 
-    // Testeamos que el tiempo de las recetas propuestas es menor o igual que el tiempo disponible.
+    // Testeamos la lógica de negocio
     describe('Recetas propuestas', function(){
 
         // Obtendremos un error si la cadena del email NO es superior a 0
@@ -84,7 +84,7 @@ describe ('Clase Usuario', function(){
             var receta1 = new Receta("Huevo Frito", ['huevo', 'aceite', 'sal'], 10);
             var receta2 = new Receta("Perrito Caliente", ['salchicha', 'pan'], 15);
             var receta3 = new Receta("Patata Asada", ['patata', 'aceite','pimienta'], 45);
-            var receta4 = new Receta("Macarrones", ['pasta', 'aceite','agua', 'tomate'], 30);
+            var receta4 = new Receta("Macarrones", ['pasta', 'aceite','agua', 'tomate'], 30);            
             var recetas_total = [receta1, receta2, receta3, receta4];
 
             // Usuario nuevo
