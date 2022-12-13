@@ -54,15 +54,22 @@ export default class Usuario{
     }
 
     /**
-     * Método para comprobar el tiempo de una Receta
+     * Método para seleccionar la mejor receta
+     * Será mejor aquella receta que tenga menor tiempo
      * @param {Receta} receta 
      */
-    ComprobarTiempo(receta)
+    SeleccionarReceta(recetas)
     {
-        if (receta.getTiempo() <= this.getTiempoDisponible())
-        {
-            this.recetas_propuestas.push(receta);
-        }
+        MejorTiempo = 2039410394
+
+        recetas.forEach(receta => {
+            tiempoReceta = receta.getTiempo()
+            
+            if (tiempoReceta < MejorTiempo)
+                MejorTiempo = tiempoReceta
+        });
+
+        return MejorTiempo;
     }
  
     /** 
@@ -70,6 +77,19 @@ export default class Usuario{
       */
     RecomendarRecetasTiempo(recetas)
     {
-        recetas.forEach(receta => this.ComprobarTiempo(receta));
+        recetasTotal = recetas
+        // Recorro todas las recetas
+        while (recetasTotal.lenght != 0)
+        {
+            // Selecciono el mejor candidato de conjunto de recetas mediante una función
+            recetaSeleccionada = this.SeleccionarReceta(recetasTotal)
+            //Eliminamos del conjunto de receta la seleccionada
+            recetasTotal = recetas.filter(receta => receta != recetaSeleccionada)
+
+            // Si es factible, es decir, si se adecua al tiempo disponible del usuario
+            // la añadimos al array de soluciones (recetas recomendadas para el usuario)
+            if (recetaSeleccionada.getTiempo() <= this.getTiempoDisponible())
+                this.recetas_propuestas.push(recetaSeleccionada)
+        } 
     }
 }
