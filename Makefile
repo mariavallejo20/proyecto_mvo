@@ -12,4 +12,4 @@ check:
 # Testeamos la lógica de negocio
 
 test:
-	mocha ./tests
+	npx mocha
