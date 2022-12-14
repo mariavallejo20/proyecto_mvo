@@ -36,12 +36,12 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 # Comprobación de la sintaxis de las entidades
 * Comando para la comprobación de la sintaxis de las entidades en node.js
 ```shell
-    make check
+    npm run check
 ```
 # Testeo de la lógica de negocio
 * Comando para testear la lógica de negocio
 ```shell
-    make test
+    npm mocha
 ```
 
 # Configuración del repositorio y claves
