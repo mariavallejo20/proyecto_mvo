@@ -19,12 +19,8 @@ Para poder elegir una librería de aserciones que se adecue a las buenas prácti
 * **Chai:**
       - Chai es una biblioteca de aserciones que incluye los dos estilos BDD / TDD. Es decir, nos permitirá utilizar el lenguaje expresivo y legible del estilo BDD o la sensación clásica del estilo TDD.
       - Cuenta con una gran comunidad de desarrolladores, ya que es la más extendida y popular.
-      - Cuenta con recientes actualizaciones, buen mantenimiento y una comunidad activa, como podemos apreciar en su [repositorio de github]( https://github.com/chaijs/chai). Siendo su última actualización hace tan solo unos días.
-      
-* **node:test:**
-      - Esta es la librería estándar de node que nos permite realizar test.
-      - Tiene una comunidad poco activa como podemos ver (repositorio de github)[https://github.com/nodejs/node-core-test].
-      - Cuenta con actualizaciones menos recientes que las otras librerias comentadas.
+      - Cuenta con recientes actualizaciones, buen mantenimiento y una comunidad activa, como podemos apreciar en su [repositorio de github](https://github.com/chaijs/chai). Siendo su última actualización hace tan solo unos días.
+
 
 ## Elección
 Tras documentarme sobre las diferentes bibliotecas de aserciones y una vez establecidos los criterios que cumplen o no cada uno de ellos, **he decidido decantarme por Chai** ya que, como podemos apreciar en [npm trends](https://npmtrends.com/chai-vs-expect.js-vs-should-vs-test), es la más extendida y mantenida, lo que disminuye la posibilidad de tener deuda técnica en el futuro; y presenta una mayor flexibilidad al permitir utilizar varios estilos de aserciones.
