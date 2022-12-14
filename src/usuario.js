@@ -60,7 +60,7 @@ export default class Usuario{
      * Será mejor aquella receta que tenga menor tiempo
      * @param {Array} recetas
      */
-    SeleccionarReceta(recetas)
+    seleccionarReceta(recetas)
     {
         var mejorTiempo = 500
         var mejorReceta = new Receta()
@@ -85,7 +85,7 @@ export default class Usuario{
       * Método que crea las recetas propuestas (ALGORITMO GREEDY)
       * @param {Array} recetas
       */
-    RecomendarRecetasTiempo(recetas)
+    recomendarRecetasPorTiempo(recetas)
     {
         var recetasTotal = recetas
         var rep = recetas.length
@@ -94,7 +94,7 @@ export default class Usuario{
         for (var i = 0; i < rep; i++)
         {
             // Selecciono el mejor candidato de conjunto de recetas mediante una función
-            var recetaSeleccionada = this.SeleccionarReceta(recetasTotal)
+            var recetaSeleccionada = this.seleccionarReceta(recetasTotal)
             // Eliminamos del conjunto de receta la seleccionada
             //recetasTotal = recetasTotal.filter(receta => receta != recetaSeleccionada)
             var indice = recetasTotal.indexOf(recetaSeleccionada)

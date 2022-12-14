@@ -91,7 +91,7 @@ describe ('Clase Usuario', function(){
             var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
-            nuevo_usuario.RecomendarRecetasTiempo(recetas_total);
+            nuevo_usuario.recomendarRecetasPorTiempo(recetas_total);
             var nuevo_recetas_propuestas = nuevo_usuario.getRecetasPropuestas();
 
             //Afirmar
