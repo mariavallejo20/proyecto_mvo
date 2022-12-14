@@ -13,7 +13,7 @@
     "mocha": "^10.1.0"
   },
   "scripts": {
-    "check": "make check",
+    "check": "node --check ./src/*.js",
     "test": "mocha"
   },
   "repository": {
