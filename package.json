@@ -1,17 +1,29 @@
 {
   "name": "proyecto_mvo",
-  "version": "1.1.0",
-  "description": "Proyecto Infraestructura Virtual 22-23",
+  "version": "1.0.0",
+  "description": "Proyecto Infraestructura Virtual 2022-2023",
   "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^4.3.7"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  },
   "scripts": {
     "check": "make check",
-    "test": "make test"
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariavallejo20/proyecto_mvo.git"
   },
   "author": "María Vallejo Ortega",
   "license": "ISC",
-  "dependencies": {
-    "pnpm": "^7.15.0",
-    "chai": "^4.3.7",
-    "mocha": "^10.1.0"
-  }
+  "bugs": {
+    "url": "https://github.com/mariavallejo20/proyecto_mvo/issues"
+  },
+  "homepage": "https://github.com/mariavallejo20/proyecto_mvo#readme"
 }
