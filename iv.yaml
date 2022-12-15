@@ -1,7 +1,7 @@
 lenguaje: node.js
 entidad: ./src/usuario.js
 automatizar: 
-  fichero: Makefile
-  orden: make
+  fichero: package.json
+  orden: npm run all
 test: tests/test.js
 
