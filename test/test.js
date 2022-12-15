@@ -11,7 +11,6 @@ describe ('Clase Usuario', function(){
         
         it('El tiempo de las recetas propuestas debe ser menor o igual que el tiempo disponible del usuario', function(){
             //Ajustar
-            var nombre = 'Maria Vallejo';
             var tiempo_disponible = 30;
             
             //Actuar
@@ -23,7 +22,7 @@ describe ('Clase Usuario', function(){
             var recetas_total = [receta1, receta2, receta3, receta4];
 
             // Usuario nuevo
-            var nuevo_usuario = new Usuario(nombre, tiempo_disponible, []);
+            var nuevo_usuario = new Usuario(null, tiempo_disponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
             nuevo_usuario.recomendarRecetasPorTiempo(recetas_total);
