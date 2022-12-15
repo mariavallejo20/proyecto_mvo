@@ -21,10 +21,9 @@ describe ('Clase Usuario', function(){
         it('El nombre del usuario NO puede ser una cadena vacía', function(){
             //Ajustar
             var nombre = 'Maria Vallejo';
-            var email = 'mariavallejo20@correo.ugr.es';
             
             //Actuar
-            var nuevo_usuario = new Usuario(nombre, email, null, null);
+            var nuevo_usuario = new Usuario(nombre, null, null);
 
             //Afirmar
             assert.isAbove(nuevo_usuario.getNombre().length, 0);
@@ -32,51 +31,13 @@ describe ('Clase Usuario', function(){
         });
     });
 
-    // Testeamos que el email del usuario NO sea una cadena vacía
-    describe('Email usuario', function(){
-
-        // Obtendremos un error si la cadena del email NO es superior a 0
-        it('El email del usuario NO puede ser una cadena vacía', function(){
-            //Ajustar
-            var nombre = 'Maria Vallejo';
-            var email = 'mariavallejo20@correo.ugr.es';
-            
-            //Actuar
-            var nuevo_usuario = new Usuario(nombre, email, null, null);
-
-            //Afirmar
-            assert.isAbove(nuevo_usuario.getEmail().length, 0);
-            
-        });
-    });
-
-    // Testeamos que el email del usuario NO sea una cadena vacía
-    describe('Tiempo disponible usuario', function(){
-
-        // Obtendremos un error si la cadena del email NO es superior a 0
-        it('El tiempo disponible del usuario debe ser mayor que 0', function(){
-            //Ajustar
-            var nombre = 'Maria Vallejo';
-            var email = 'mariavallejo20@correo.ugr.es';
-            var tiempo_disponible = 10;
-            
-            //Actuar
-            var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, null);
-
-            //Afirmar
-            assert.isAbove(nuevo_usuario.getTiempoDisponible(), 0);
-            
-        });
-    });
-
     // Testeamos la lógica de negocio
     describe('Recetas propuestas', function(){
 
-        // Obtendremos un error si la cadena del email NO es superior a 0
+        
         it('El tiempo de las recetas propuestas debe ser menor o igual que el tiempo disponible del usuario', function(){
             //Ajustar
             var nombre = 'Maria Vallejo';
-            var email = 'mariavallejo20@correo.ugr.es';
             var tiempo_disponible = 30;
             
             //Actuar
@@ -88,7 +49,7 @@ describe ('Clase Usuario', function(){
             var recetas_total = [receta1, receta2, receta3, receta4];
 
             // Usuario nuevo
-            var nuevo_usuario = new Usuario(nombre, email, tiempo_disponible, []);
+            var nuevo_usuario = new Usuario(nombre, tiempo_disponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
             nuevo_usuario.recomendarRecetasPorTiempo(recetas_total);
