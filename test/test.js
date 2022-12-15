@@ -11,30 +11,31 @@ describe ('Clase Usuario', function(){
         
         it('El tiempo de las recetas propuestas debe ser menor o igual que el tiempo disponible del usuario', function(){
             //Ajustar
-            var tiempo_disponible = 30;
+            let tiempoDisponible = 30;
             
             //Actuar
             // Algunas recetas
-            var receta1 = new Receta("Huevo Frito", null , 10);
-            var receta2 = new Receta("Perrito Caliente", null, 15);
-            var receta3 = new Receta("Patata Asada", null, 45);
-            var receta4 = new Receta("Macarrones", null, 30);            
-            var recetas_total = [receta1, receta2, receta3, receta4];
+            let receta1 = new Receta("Huevo Frito", ["aceite", "huevo", "sal"], 10);
+            let receta2 = new Receta("Perrito Caliente", ["salchicha", "pan", "mayosena", "queso"], 15);
+            let receta3 = new Receta("Patata Asada", ["patata", "sal", "pimienta"], 45);
+            let receta4 = new Receta("Macarrones con tomate", ["agua", "aceite", "sal", "pasta", "pimienta", "tomate"], 30); 
+            let receta5 = new Receta("Macarrones con nata", ["agua", "aceite", "sal", "pasta", "pimienta", "nata", "queso"], 30);           
+            let recetasTotal = [receta1, receta2, receta3, receta4, receta5];
 
             // Usuario nuevo
-            var nuevo_usuario = new Usuario(null, tiempo_disponible, []);
+            let nuevoUsuario = new Usuario(null, tiempoDisponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
-            nuevo_usuario.recomendarRecetasPorTiempo(recetas_total);
-            var nuevo_recetas_propuestas = nuevo_usuario.getRecetasPropuestas();
+            nuevoUsuario.recomendarRecetas(recetasTotal, ["sal", "pimienta"], tiempoDisponible);
+            let nuevoRecetasPropuestas = nuevoUsuario.getRecetasPropuestas();
 
             //Afirmar
 
             //Comprobamos el tiempo para todas las recetas
-            nuevo_recetas_propuestas.forEach(receta => assert.isAtMost(receta.getTiempo(), nuevo_usuario.getTiempoDisponible()));
+            nuevoRecetasPropuestas.forEach(receta => assert.isAtMost(receta.getTiempo(), nuevoUsuario.getTiempoDisponible()));
             
             //Comprobamos que se recomiendan las 3 recetas esperadas
-            assert.equal(nuevo_recetas_propuestas.length, 3, "Se espera recomendar 3 recetas");
+            assert.equal(nuevoRecetasPropuestas.length, 3, "Se espera recomendar 3 recetas");
         });
     });
 

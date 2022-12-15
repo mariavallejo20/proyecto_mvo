@@ -44,55 +44,56 @@ export default class Usuario{
         return this.recetas_propuestas;
     }
 
+    
     /**
-     * Método para seleccionar la mejor receta
-     * Será mejor aquella receta que tenga menor tiempo
-     * @param {Array} recetas
+     * Método que comprueba que recetas contienen los ingrediente disponibles del usuario
+     * @param {array} recetas 
+     * @param {array} disponibles 
      */
-    seleccionarReceta(recetas)
-    {
-        var mejorTiempo = 500
-        var mejorReceta = new Receta()
 
-        // Recorro las recetas cogiendo el tiempo necesario de cada receta
-        recetas.forEach(receta => {
-            var tiempoReceta = receta.getTiempo()
-            
-            // Si el tiempo de la mejor receta hasta el momento es mayor que el de la receta actual
-            // Me quedo con la receta actual
-            if (tiempoReceta <= mejorTiempo)
-                mejorTiempo = tiempoReceta
-                mejorReceta = receta
+    comprobarIngredientes(recetas, disponibles)
+    {
+        let recetasTotal = recetas
+        let recetasADevolver = []
+        //Recorro todas las recetas obteniendo sus ingredietes
+        recetasTotal.forEach(receta => {
+            let ingredientesReceta = receta.getIngredientes()
+            let aniadirReceta = false
+            // Compruebo si los ingredientes disponibles están contenidos en los ingredientes de la receta
+            disponibles.forEach(ingrediente => {
+                let encontrado = ingredientesReceta.indexOf(ingrediente)
+                // Si encontramos al menos un ingrediente, añadimos esta receta
+                if(encontrado != -1)
+                    aniadirReceta = true
+            });
+            // Añadirmos a las recetas que contienen los ingredientes disponibles
+            if (aniadirReceta)
+                recetasADevolver.push(receta)
         });
 
-        // Devuelvo la receta con el menor tiempo 
-        return mejorReceta;
-
+        // Devolvermos las recetas, hasta ahora recomendadas en función de los ingredientes
+        return recetasADevolver
     }
  
     /** 
-      * Método que crea las recetas propuestas (ALGORITMO GREEDY)
+      * Método que selecciona aquellas recetas que se adecuan al tiempo del usuario, teniendo en cuenta
+      * los ingredientes de los que dispone
       * @param {Array} recetas
+      * @param {Array} Ingredientesdisponibles
+      * @param {int} tiempoDisponible
       */
-    recomendarRecetasPorTiempo(recetas)
+    recomendarRecetas(recetas, Ingredientesdisponibles, tiempoDisponible)
     {
-        var recetasTotal = recetas
-        var rep = recetas.length
-
-        // Recorro todas las recetas
-        for (var i = 0; i < rep; i++)
-        {
-            // Selecciono el mejor candidato de conjunto de recetas mediante una función
-            var recetaSeleccionada = this.seleccionarReceta(recetasTotal)
-            // Eliminamos del conjunto de receta la seleccionada
-            //recetasTotal = recetasTotal.filter(receta => receta != recetaSeleccionada)
-            var indice = recetasTotal.indexOf(recetaSeleccionada)
-            recetasTotal.splice(indice,1)
-
-            // Si es factible, es decir, si se adecua al tiempo disponible del usuario
-            // la añadimos al array de soluciones (recetas recomendadas para el usuario)
-            if (recetaSeleccionada.getTiempo() <= this.getTiempoDisponible())
-                this.recetas_propuestas.push(recetaSeleccionada) 
-        }
+        let recetasTotal = recetas
+        let recetasConIngredientes = this.comprobarIngredientes(recetasTotal, Ingredientesdisponibles)
+        
+        //Recorremos las recetas que incluyen al menos un ingrediente disponible por el usuario
+        recetasConIngredientes.forEach(receta => {
+            //Selecciono aquellas recetas que se adecuan al tiempo del usuario
+            if(receta.getTiempo() <= tiempoDisponible)
+                this.recetas_propuestas.push(receta)
+        });
     }
+
+    
 }
