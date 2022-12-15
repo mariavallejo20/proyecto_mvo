@@ -21,6 +21,11 @@ Para poder elegir una librería de aserciones que se adecue a las buenas prácti
       - Cuenta con una gran comunidad de desarrolladores, ya que es la más extendida y popular como podemos ver en su [puntuación de snyk](https://snyk.io/advisor/npm-package/chai).
       - Cuenta con recientes actualizaciones, buen mantenimiento y una comunidad activa, como podemos apreciar en su [repositorio de github](https://github.com/chaijs/chai). Siendo su última actualización hace tan solo unos días.
 
+* **node:assert:**
+      - assert es la biblioteca de aserciones estándar de js.
+      - Atenciendo a su [puntuación de snyk](https://snyk.io/advisor/npm-package/assert), podemos apreciar que tiene menor calificación en mantenimiento y comunidad que alguna de las anteriores.
+      - Podría ser una buena opción al ser la estándar de js, disminuyendo la deuda técnica, en este sentido. Aunque el hecho de no estar tan mantenida como otras podría aumentarla.
+
 
 ## Elección
-Tras documentarme sobre las diferentes bibliotecas de aserciones y una vez establecidos los criterios que cumplen o no cada uno de ellos, **he decidido decantarme por Chai** ya que, es la más popular y mantenida, lo que disminuye la posibilidad de tener deuda técnica en el futuro; y presenta una mayor flexibilidad al permitir utilizar varios estilos de aserciones.
+Tras documentarme sobre las diferentes bibliotecas de aserciones y una vez establecidos los criterios que cumplen o no cada uno de ellos, **he decidido decantarme por Chai** ya que, es la más popular y mantenida, lo que disminuye la posibilidad de tener deuda técnica en este aspecto; y presenta una mayor flexibilidad al permitir utilizar varios estilos de aserciones.
