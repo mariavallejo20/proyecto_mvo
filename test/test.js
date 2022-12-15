@@ -16,10 +16,10 @@ describe ('Clase Usuario', function(){
             
             //Actuar
             // Algunas recetas
-            var receta1 = new Receta("Huevo Frito", ['huevo', 'aceite', 'sal'], 10);
-            var receta2 = new Receta("Perrito Caliente", ['salchicha', 'pan'], 15);
-            var receta3 = new Receta("Patata Asada", ['patata', 'aceite','pimienta'], 45);
-            var receta4 = new Receta("Macarrones", ['pasta', 'aceite','agua', 'tomate'], 30);            
+            var receta1 = new Receta("Huevo Frito", null , 10);
+            var receta2 = new Receta("Perrito Caliente", null, 15);
+            var receta3 = new Receta("Patata Asada", null, 45);
+            var receta4 = new Receta("Macarrones", null, 30);            
             var recetas_total = [receta1, receta2, receta3, receta4];
 
             // Usuario nuevo
