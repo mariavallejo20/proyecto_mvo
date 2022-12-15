@@ -27,4 +27,4 @@ Para poder elegir un test runner que se adecue a las buenas prácticas del lengu
     - Ava no tiene incorporada biblioteca de aserciones, pero te permite utilizar cualquiera.
     
 ## Elección
-Tras documentarme sobre los diferentes posibilidades y una vez establecidos los criterios he podido apreciar que cualquier test runner de los mencionados podría ser una buena opción, ya que todos cumplen con las codiciones necesarias para mi proyecto y, por tanto, cualquier opción sería buena. Basandome en lo ya desarrollado en mi proyecto, ya que estoy modificando este fichero después de haber comenzado con los tests, **he decidido continuar con mi elección inicial, es decir, Mocha**
+Tras documentarme sobre los diferentes posibilidades y una vez establecidos los criterios he podido apreciar que cualquier test runner de los mencionados podría ser una buena opción, ya que todos cumplen con las codiciones necesarias para mi proyecto y cuentan con una muy buena puntuación, por tanto, cualquier opción sería buena. Atendiendo a esto, **he decidido utilizar Mocha**
