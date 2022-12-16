@@ -2,6 +2,14 @@ import {assert} from 'chai'
 import Usuario from '../src/usuario.js'
 import Receta from '../src/receta.js'
 
+// Algunas recetas
+let receta1 = new Receta("Huevo Frito", ["aceite", "huevo", "sal"], 10);
+let receta2 = new Receta("Perrito Caliente", ["salchicha", "pan", "mayosena", "queso"], 15);
+let receta3 = new Receta("Patata Asada", ["patata", "sal", "pimienta"], 45);
+let receta4 = new Receta("Macarrones con tomate", ["agua", "aceite", "sal", "pasta", "pimienta", "tomate"], 30); 
+let receta5 = new Receta("Macarrones con nata", ["agua", "aceite", "sal", "pasta", "pimienta", "nata", "queso"], 30);           
+const recetasTotal = [receta1, receta2, receta3, receta4, receta5];
+
 // Testeamos la clase Usuario
 describe ('Clase Usuario', function(){
 
@@ -14,14 +22,6 @@ describe ('Clase Usuario', function(){
             let tiempoDisponible = 30;
             
             //Actuar
-            // Algunas recetas
-            let receta1 = new Receta("Huevo Frito", ["aceite", "huevo", "sal"], 10);
-            let receta2 = new Receta("Perrito Caliente", ["salchicha", "pan", "mayosena", "queso"], 15);
-            let receta3 = new Receta("Patata Asada", ["patata", "sal", "pimienta"], 45);
-            let receta4 = new Receta("Macarrones con tomate", ["agua", "aceite", "sal", "pasta", "pimienta", "tomate"], 30); 
-            let receta5 = new Receta("Macarrones con nata", ["agua", "aceite", "sal", "pasta", "pimienta", "nata", "queso"], 30);           
-            let recetasTotal = [receta1, receta2, receta3, receta4, receta5];
-
             // Usuario nuevo
             let nuevoUsuario = new Usuario(null, tiempoDisponible, []);
             
