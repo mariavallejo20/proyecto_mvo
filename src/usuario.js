@@ -78,13 +78,15 @@ export default class Usuario{
     {
         let recetasTotal = recetas
         let recetasConIngredientes = this.comprobarIngredientes(recetasTotal, Ingredientesdisponibles)
-        
+        let recetasPropuestas = []
         //Recorremos las recetas que incluyen al menos un ingrediente disponible por el usuario
         recetasConIngredientes.forEach(receta => {
             //Selecciono aquellas recetas que se adecuan al tiempo del usuario
             if(receta.getTiempo() <= tiempoDisponible)
-                this.recetas_propuestas.push(receta)
+                recetasPropuestas.push(receta)
         });
+
+        return recetasPropuestas
     }
 
     

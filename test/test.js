@@ -26,16 +26,14 @@ describe ('Clase Usuario', function(){
             let nuevoUsuario = new Usuario(null, tiempoDisponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
-            nuevoUsuario.recomendarRecetas(recetasTotal, ["sal", "pimienta"], tiempoDisponible);
-            let nuevoRecetasPropuestas = nuevoUsuario.recetas_propuestas
+            nuevoUsuario.recetas_propuestas = nuevoUsuario.recomendarRecetas(recetasTotal, ["sal", "pimienta"], tiempoDisponible);
 
             //Afirmar
-
             //Comprobamos el tiempo para todas las recetas
-            nuevoRecetasPropuestas.forEach(receta => assert.isAtMost(receta.getTiempo(), nuevoUsuario.getTiempoDisponible()));
+            nuevoUsuario.recetas_propuestas.forEach(receta => assert.isAtMost(receta.getTiempo(), nuevoUsuario.getTiempoDisponible()));
             
             //Comprobamos que se recomiendan las 3 recetas esperadas
-            assert.equal(nuevoRecetasPropuestas.length, 3, "Se espera recomendar 3 recetas");
+            assert.equal(nuevoUsuario.recetas_propuestas.length, 3, "Se espera recomendar 3 recetas");
         });
     });
 
