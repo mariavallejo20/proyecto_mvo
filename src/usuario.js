@@ -35,16 +35,7 @@ export default class Usuario{
      getTiempoDisponible(){
         return this.tiempo_disponible;
     }
-
-    /**
-     * Método para obtener la lista de recetas propuestas
-     * @returns {Array}
-     */
-     getRecetasPropuestas(){
-        return this.recetas_propuestas;
-    }
-
-    
+   
     /**
      * Método que comprueba que recetas contienen los ingrediente disponibles del usuario
      * @param {array} recetas 
@@ -57,13 +48,14 @@ export default class Usuario{
         let recetasADevolver = []
         //Recorro todas las recetas obteniendo sus ingredietes
         recetasTotal.forEach(receta => {
-            let ingredientesReceta = receta.getIngredientes()
+            const ingredientesReceta = new Set(receta.getIngredientes())
             let aniadirReceta = false
             // Compruebo si los ingredientes disponibles están contenidos en los ingredientes de la receta
             disponibles.forEach(ingrediente => {
-                let encontrado = ingredientesReceta.indexOf(ingrediente)
+                let encontrado = false
+                encontrado = ingredientesReceta.has(ingrediente)
                 // Si encontramos al menos un ingrediente, añadimos esta receta
-                if(encontrado != -1)
+                if(encontrado)
                     aniadirReceta = true
             });
             // Añadirmos a las recetas que contienen los ingredientes disponibles

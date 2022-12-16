@@ -27,7 +27,7 @@ describe ('Clase Usuario', function(){
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
             nuevoUsuario.recomendarRecetas(recetasTotal, ["sal", "pimienta"], tiempoDisponible);
-            let nuevoRecetasPropuestas = nuevoUsuario.getRecetasPropuestas();
+            let nuevoRecetasPropuestas = nuevoUsuario.recetas_propuestas
 
             //Afirmar
 
