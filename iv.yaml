@@ -2,6 +2,6 @@ lenguaje: node.js
 entidad: ./src/usuario.js
 automatizar: 
   fichero: package.json
-  orden: npm run all
-test: tests/test.js
+  orden: npm run
+test: ./tests/test.js
 

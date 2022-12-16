@@ -8,13 +8,11 @@
   },
   "devDependencies": {
     "chai": "^4.3.7",
-    "mocha": "^10.1.0",
-    "npm-run-all": "^4.1.5"
+    "mocha": "^10.1.0"
   },
   "scripts": {
     "check": "node --check ./src/*.js",
-    "test": "mocha",
-    "all": "npm-run-all --parallel check test"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
