@@ -1,6 +1,4 @@
-const Unidades = require("./enum/unidades")
-
-class Receta{
+export default class Receta{
 
     /**
      * Clase Receta para especificar la información de cada receta

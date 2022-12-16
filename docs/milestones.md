@@ -6,7 +6,7 @@ Además, se deberán incluir las herramientas necesarias para la automatización
 
 ## [[M1] Implementación de la lógica de negocio.](https://github.com/mariavallejo20/proyecto_mvo/milestone/6)
 Diseño e implementación de un sistema que permita extraer de la estructura de datos de recetas aquellas que coincidan con las necesidades del usuario, ya sea minimizando el tiempo de preparación de la receta o maximizando los ingredientes a utilizar para elaborarla.
-Para ello hará uso de las funciones incluidas en la librería creada anteriormente.
+Además, el PMV deberá contener las herramientas de prueba (bibliotecas de aserciones y test-runner).
 
 ## [[M2] Implementación de la interfaz de usuario.](https://github.com/mariavallejo20/proyecto_mvo/milestone/5)
 Diseño e implementación de una interfaz sencilla para el usuario que permita visualizar con facilidad las recetas con todos sus atributos, adaptada a todos los rangos de edad, ya que como vemos en las historias de usuario, esta aplicación puede ser utilizada por gran diversidad de personas.

@@ -9,8 +9,8 @@ El principal problema es la dificultad que tiene una persona a la hora de decidi
 
 La solución planteada será crear una aplicación que permita al usuario obtener recetas de una base de datos en función a dos objetivos:
 
-    - Maximizar el número de ingredientes que el usuario tiene disponibles
-    - Minimizar el tiempo que el usuario debe emplear para realizar la receta
+* Maximizar el número de ingredientes que el usuario tiene disponibles.
+* Minimizar el tiempo que el usuario debe emplear para realizar la receta
 
 La idea es tener la posibilidad de que el usuario elija cúal de los dos es su objetivo principal, y una vez esto, aplicar una heurística en función de las características de cada receta para encontrar una lista de recetas que se adecuen a las necesidades del usuario.
  
@@ -24,16 +24,24 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 * [Milestones](./docs/milestones.md)
 * [Historias de Usuario](./docs/historias_usuario.md)
 
-## Gestor de dependencias
+## Automatización
 * [Gestor de dependencias](./docs/gestor_dependencias.md)
-
-## Task runner 
 * [Task Runner](./docs/task_runner.md)
+
+## Tests
+* [Test runner](./docs/test_runner.md)
+* [Biblioteca de aserciones](./docs/aserciones.md)
+
 
 # Comprobación de la sintaxis de las entidades
 * Comando para la comprobación de la sintaxis de las entidades en node.js
 ```shell
-    make check
+    npm run check
+```
+# Testeo de la lógica de negocio
+* Comando para testear la lógica de negocio
+```shell
+    npm run test
 ```
 
 # Configuración del repositorio y claves
