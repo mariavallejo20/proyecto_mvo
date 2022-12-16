@@ -9,23 +9,13 @@ export default class Usuario{
 
     /**
      * Constructor de la clase Usuario
-     * @param {String} nombre //nombre del usuario
      * @param {int} tiempo_disponible //tiempo del que dispone el usuario (Resuelve el problema 2)
      * @param {Array} recetas_propuestas //lista de las recetas propuestas al usuario en base al tiempo del que dispone (Resuelve el problema 3)
      */
 
-    constructor(nombre, tiempo_disponible, recetas_propuestas){
-        this.nombre = nombre;
+    constructor(tiempo_disponible, recetas_propuestas){
         this.tiempo_disponible = tiempo_disponible;
         this.recetas_propuestas = recetas_propuestas;
-    }
-
-    /**
-     * Método para obtener el nombre del usuario
-     * @returns {String}
-     */
-    getNombre(){
-        return this.nombre;
     }
 
     /**

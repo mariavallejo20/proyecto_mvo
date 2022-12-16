@@ -23,7 +23,7 @@ describe ('Clase Usuario', function(){
             
             //Actuar
             // Usuario nuevo
-            let nuevoUsuario = new Usuario(null, tiempoDisponible, []);
+            let nuevoUsuario = new Usuario(tiempoDisponible, []);
             
             // Aplicamos la lógica de negocio y obtenemos las recetas propuestas
             nuevoUsuario.recetas_propuestas = nuevoUsuario.recomendarRecetas(recetasTotal, ["sal", "pimienta"], tiempoDisponible);
