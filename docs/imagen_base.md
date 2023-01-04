@@ -7,7 +7,7 @@ Para escoger la imagen de docker a usar tendré en cuenta los siguientres criter
 3. Se deberá tener en cuenta que se va a utilizar para testear el proyecto, por lo que habrá funcionalidades añadidas que no serán necesarias.
 
 ## Observaciones:
-Tras echar un vistazo a algunas imágenes en el explorador de [DockerHub](https://hub.docker.com/search?q=) me he dado cuenta, que muchas de ellas incluyen muchas funcionalidades extra que no son para nada necesarias en el objetivo que se desea alcanzar que es testear el proyecto, y algunas que si siquiera se para que sirven, como por ejemplo, la imagen de [node](https://github.com/nodejs/docker-node/blob/3b210a6d277538912aa45266ba4bc83d4899c2ca/19/alpine3.16/Dockerfile). Por tanto, he decidido centrarme en mirar las imágenes de algunos sistemas operativos como alpine, ubuntu, etc. y desarrollar mi imagen a partir de estas que incluyen, en algunas ocasiones, lo mínimo.
+Tras echar un vistazo a algunas imágenes en el explorador de [DockerHub](https://hub.docker.com/search?q=) me he dado cuenta, que muchas de ellas incluyen muchas funcionalidades extra que no son para nada necesarias en el objetivo que se desea alcanzar que es testear el proyecto, y algunas que ni si siquiera se para que sirven, como por ejemplo, la imagen de [node](https://github.com/nodejs/docker-node/blob/3b210a6d277538912aa45266ba4bc83d4899c2ca/19/alpine3.16/Dockerfile). Por tanto, he decidido centrarme en mirar las imágenes de algunos sistemas operativos como alpine, ubuntu, etc. y desarrollar mi imagen a partir de estas que incluyen, en algunas ocasiones, lo mínimo.
 Esto me permitirá tener una imágen poco pesada.
 
 ## Posibles imágenes:
