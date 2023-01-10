@@ -44,7 +44,7 @@ Para escoger la imagen de docker a usar tendré en cuenta los siguientres criter
     - Tiene un peso de 228 MB, un poco más pesada que fedora, sin embargo, tampoco cuenta con un peso excesivo.
     - Esta imagen configura ubuntu como un sistema mínimo para usarlo dentro de un contenedor solucionando los problemas que esto puede ocasionar, es decir, baseimage-docker es una imagen especial de Docker sobre Ubuntu que está configurada para su uso correcto dentro de los contenedores de Docker.
 
-Buscando las mejorares imágenes o más usadas para un contenedor node, si queremos una imagen ligera se recomienda:
+Buscando las mejores imágenes o más usadas para un contenedor node, si queremos una imagen ligera se recomienda:
 
 *[node_bullseye-slim](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/bullseye-slim/Dockerfile) 
     - Esta imagen cuenta con un muy buen mantenimiento y seguridad
