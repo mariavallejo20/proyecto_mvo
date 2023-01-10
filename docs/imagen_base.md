@@ -6,11 +6,9 @@ Para escoger la imagen de docker a usar tendré en cuenta los siguientres criter
 2. Se tendrá en cuenta el peso de la imagen.
 3. Se deberá tener en cuenta que se va a utilizar para testear el proyecto, por lo que habrá funcionalidades añadidas que no serán necesarias.
 
-## Observaciones:
-Tras echar un vistazo a algunas imágenes en el explorador de [DockerHub](https://hub.docker.com/search?q=) me he dado cuenta, que muchas de ellas incluyen muchas funcionalidades extra que no son para nada necesarias en el objetivo que se desea alcanzar que es testear el proyecto, y algunas que ni si siquiera se para que sirven, como por ejemplo, la imagen de [node](https://github.com/nodejs/docker-node/blob/3b210a6d277538912aa45266ba4bc83d4899c2ca/19/alpine3.16/Dockerfile). Por tanto, he decidido centrarme en mirar las imágenes de algunos sistemas operativos como alpine, ubuntu, etc. y desarrollar mi imagen a partir de estas que incluyen, en algunas ocasiones, lo mínimo. Aunque también investigaré otras posibilidades.
-Esto me permitirá tener una imágen poco pesada.
-
 ## Posibles imágenes:
+
+### Docker OS images
 
 * [Ubuntu](https://hub.docker.com/_/ubuntu):
     - La imágenes del sistema operativo Ubuntu cuenta con un buen manteniemiento y soporte.
@@ -27,6 +25,8 @@ Esto me permitirá tener una imágen poco pesada.
     - Cuenta con un buen mantenimiento, siendo su última versión de hace tan solo algunos días.
     - Su peso es de 184 MB, un peso superior a las anteriores, siendo el doble que la de Ubuntu y casi 20 veces mayor que la de Alpine.
 
+### Verified Publisher
+
 * [bitnami/node](https://github.com/bitnami/containers/blob/main/bitnami/node/18/debian-11/Dockerfile)
     - La última versión de esta imagen cuenta con instalaciones/funcionalidades añadidas que no son necesarias, como por ejemplo, python, curl, unzip o wget, además, librerías de las cuáles algunas no sé cúal es su utilidad.
     - Cuenta con un buen mantenimiento, siendo su última actualización hace unas horas y con un repositorio bastante activo.
@@ -37,12 +37,24 @@ Esto me permitirá tener una imágen poco pesada.
     - Cuenta con la última actualización hace unos días.
     - Su peso es de 1.29 GB, muy superior al de las anteriores.
 
+### Otras búsquedas
+
+* [phusion/baseimage](https://github.com/phusion/baseimage-docker):
+    - Esta imagen cuenta con un buen mantenimiento, con actualizaciones de hace unos meses
+    - Tiene un peso de 228 MB, un poco más pesada que fedora que es la más pesada hasta el momento, sin embargo, tampoco cuenta con un peso excesivo.
+    - Esta imagen configura ubuntu como un sistema mínimo para usarlo dentro de un contenedor solucionando los problemas que esto puede ocasionar, es decir, baseimage-docker es una imagen especial de Docker sobre Ubuntu que está configurada para su uso correcto dentro de los contenedores de Docker.
+
+Buscando las mejorares imágenes o más usadas para un contenedor node, si queremos una imagen ligera se recomienda:
+
+*[node_bullseye-slim](https://github.com/nodejs/docker-node/blob/28ad5e0e5d0e80df44d897c9057ffd6419a3c7a5/19/bullseye-slim/Dockerfile) 
+    - Esta imagen cuenta con un muy buen mantenimiento y seguridad
+    - Cuenta con un peso de 247.8 MB, un tamaño superior a la imagen base de docker de phusion.
+    - Tiene algunas herramientas innecesarias como por ejemplo Yarm
+
 
 ## Elección:
 
-Tras documentarme sobre las diferentes imágenes que puedo utilizar, he decidido decantarme por utilizar la de algún sistema operativo, ya que como podemos comprobar en los datos obtenidos son las que tienen un menor peso.
-Por otro lado, entre las de los sistemas operativos descarto fedora ya que supera notablemente en tamaño de las otras 2 imágenes. 
-Finalmente, entre ubuntu y alpine, que son las mejores opciones en cuanto a los criterios deseados, he decidido decantarme por **ubuntu**, ya que aunque no es la de menor tamaño, cuenta con un peso bastante reducido cumpliendo con el criterio establecido. 
+Tras documentarme sobre las diferentes imágenes que puedo utilizar, he decidido decantarme por utilizar imagen base de phusion sobre Ubuntu a pesar de no ser la menos pesada, ya que es una imagen que nos va a permitir tener un contenedor que contenga un sistema operativo mínimo configurado correctamente. A pesar de no ser la menos pesada, cuenta con un peso reducido.
 
 
 
