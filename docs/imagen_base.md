@@ -41,7 +41,7 @@ Para escoger la imagen de docker a usar tendré en cuenta los siguientres criter
 
 * [phusion/baseimage](https://github.com/phusion/baseimage-docker):
     - Esta imagen cuenta con un buen mantenimiento, con actualizaciones de hace unos meses
-    - Tiene un peso de 228 MB, un poco más pesada que fedora que es la más pesada hasta el momento, sin embargo, tampoco cuenta con un peso excesivo.
+    - Tiene un peso de 228 MB, un poco más pesada que fedora, sin embargo, tampoco cuenta con un peso excesivo.
     - Esta imagen configura ubuntu como un sistema mínimo para usarlo dentro de un contenedor solucionando los problemas que esto puede ocasionar, es decir, baseimage-docker es una imagen especial de Docker sobre Ubuntu que está configurada para su uso correcto dentro de los contenedores de Docker.
 
 Buscando las mejorares imágenes o más usadas para un contenedor node, si queremos una imagen ligera se recomienda:
