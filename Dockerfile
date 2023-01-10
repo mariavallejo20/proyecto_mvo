@@ -1,17 +1,21 @@
-FROM ubuntu:latest
+FROM phusion/baseimage:jammy-1.0.1
 
-RUN mkdir -p /app/test
+RUN mkdir -p /home/userTest/app/test /home/userTest/.npm
 
-WORKDIR /app/test
-
-COPY package.json /app
+WORKDIR /home/userTest/app/test
 
 RUN groupadd groupTest && useradd -g groupTest userTest && \
-    chown -R userTest:groupTest /app && \
-    apt-get update && apt-get upgrade && \
-    apt-get install -y --no-install-recommends npm && npm install
+    chown -R userTest:groupTest /home/userTest/app/test && \
+    chown -R userTest:groupTest /home/userTest/.npm
+
+COPY package.json ./
+
+RUN apt-get update && apt-get upgrade -y && \
+    apt-get install -y --no-install-recommends npm
 
 USER userTest
+
+RUN npm install
 
 ENTRYPOINT [ "npm", "run", "test" ]
 
