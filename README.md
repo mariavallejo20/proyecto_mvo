@@ -32,6 +32,9 @@ Es una buena idea para aplicación en la nube ya que en esta podemos almacenar t
 * [Test runner](./docs/test_runner.md)
 * [Biblioteca de aserciones](./docs/aserciones.md)
 
+## Imagen base Docker
+* [Imagen base](./docs/imagen_base.md)
+
 
 # Comprobación de la sintaxis de las entidades
 * Comando para la comprobación de la sintaxis de las entidades en node.js
